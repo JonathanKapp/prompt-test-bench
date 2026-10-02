@@ -2,7 +2,11 @@
 
 import csv
 
-with open("data/recipes.csv") as f:
-    for row in csv.DictReader(f):
-        print(row["recipe"], "->", row["vegetarian"])
-        
+with open("prompts/v1.txt") as f:
+    template = f.read()
+
+    with open("data/recipes.csv") as f:
+        for row in csv.DictReader(f):
+            prompt = template.replace("{recipe}", row["recipe"])
+            print(prompt)
+            print("---")
