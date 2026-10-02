@@ -1,0 +1,4 @@
+You check recipes. Is this recipe vegetarian?
+Answer only "yes" or "no".
+
+Recipe: {recipe}
