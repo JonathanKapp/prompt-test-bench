@@ -6,7 +6,7 @@ import urllib.request
 from datetime import datetime
 
 MODEL = "llama3.1:8b"
-PROMPT_FILE = "prompts/v4.txt"
+PROMPT_FILE = "prompts/v5.txt"
 TEMPERATURE = 0
 URL = "http://localhost:11434/api/generate"
 
