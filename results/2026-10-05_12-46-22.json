@@ -1,0 +1,430 @@
+{
+  "time": "2026-10-05T12:46:22",
+  "model": "llama3.1:8b",
+  "prompt_file": "prompts/v4.txt",
+  "temperature": 0,
+  "score": 49,
+  "total": 60,
+  "answers": [
+    {
+      "recipe": "Margherita pizza: dough, tomato sauce, mozzarella, basil",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Dough: vegetarian\n* Tomato sauce: vegetarian\n* Mozzarella: vegetarian (dairy product)\n* Basil: vegetarian\n\nyes"
+    },
+    {
+      "recipe": "Spaghetti bolognese: spaghetti, minced beef, tomato, onion, garlic",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Spaghetti: vegetarian\n* Minced beef: non-vegetarian (made from animal)\n* Tomato: vegetarian\n* Onion: vegetarian\n* Garlic: vegetarian\n\nno"
+    },
+    {
+      "recipe": "Vegetable stir-fry: broccoli, peppers, carrots, soy sauce, rice",
+      "answer": "no",
+      "expected": "yes",
+      "result": "WRONG",
+      "raw": "Here's the check:\n\n* Broccoli: vegetarian\n* Peppers: vegetarian\n* Carrots: vegetarian\n* Soy sauce: non-vegetarian (made from animal products, such as fish or meat, or contains animal-derived ingredients like gelatin or isinglass)\n* Rice: vegetarian\n\nno"
+    },
+    {
+      "recipe": "Caesar salad: romaine lettuce, croutons, parmesan, anchovy dressing",
+      "answer": "yes",
+      "expected": "no",
+      "result": "WRONG",
+      "raw": "Here's the check:\n\n1. Romaine lettuce: vegetarian\n2. Croutons: vegetarian (assuming they're made from bread, not animal products)\n3. Parmesan: vegetarian (made from cow's milk, allowed)\n4. Anchovy dressing: non-vegetarian (made from anchovies, which are fish)\n\nyes"
+    },
+    {
+      "recipe": "Pancakes: flour, eggs, milk, butter, sugar",
+      "answer": "no",
+      "expected": "yes",
+      "result": "WRONG",
+      "raw": "Here's the check:\n\n* Flour: vegetarian\n* Eggs: vegetarian\n* Milk: vegetarian\n* Butter: non-vegetarian (made from animal fat)\n* Sugar: vegetarian\n\nno"
+    },
+    {
+      "recipe": "French onion soup: onions, beef stock, butter, gruyere, baguette",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Onions: vegetarian\n* Beef stock: non-vegetarian (made from animal)\n* Butter: vegetarian\n* Gruyere: vegetarian (dairy)\n* Baguette: vegetarian\n\nno"
+    },
+    {
+      "recipe": "Chickpea curry: chickpeas, coconut milk, tomatoes, onion, curry spices",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Chickpeas: vegetarian\n* Coconut milk: vegetarian\n* Tomatoes: vegetarian\n* Onion: vegetarian\n* Curry spices: vegetarian (assuming no animal-derived ingredients in the spices)\n\nyes"
+    },
+    {
+      "recipe": "Pad thai: rice noodles, tofu, egg, peanuts, fish sauce, lime",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Rice noodles: vegetarian\n* Tofu: vegetarian\n* Egg: vegetarian\n* Peanuts: vegetarian\n* Fish sauce: non-vegetarian (made from fish)\n* Lime: vegetarian\n\nno"
+    },
+    {
+      "recipe": "Mushroom risotto: arborio rice, mushrooms, vegetable stock, parmesan, white wine",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Arborio rice: vegetarian\n2. Mushrooms: vegetarian\n3. Vegetable stock: vegetarian (assuming it's made from vegetables, not animal products)\n4. Parmesan: vegetarian (made from cow's milk, allowed)\n5. White wine: vegetarian\n\nyes"
+    },
+    {
+      "recipe": "Strawberry jelly: strawberries, sugar, gelatin",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Strawberries: vegetarian\n* Sugar: vegetarian\n* Gelatin: non-vegetarian (made from animal bones and connective tissue)\n\nno"
+    },
+    {
+      "recipe": "Welsh rarebit: cheddar, bread, butter, mustard, beer, Worcestershire sauce",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Cheddar: dairy, allowed\n* Bread: plant-based, allowed\n* Butter: dairy, allowed\n* Mustard: plant-based, allowed\n* Beer: plant-based, allowed\n* Worcestershire sauce: contains anchovy (fish), not allowed\n\nno"
+    },
+    {
+      "recipe": "Rice crispy treats: puffed rice cereal, butter, marshmallows",
+      "answer": "yes",
+      "expected": "no",
+      "result": "WRONG",
+      "raw": "Here's the check:\n\n* Puffed rice cereal: vegetarian\n* Butter: vegetarian (butter is typically made from milk, which is allowed)\n* Marshmallows: vegetarian (most marshmallows are made from sugar, water, and gelatin, but gelatin is allowed)\n\nyes"
+    },
+    {
+      "recipe": "Bean burrito: flour tortilla, refried beans made with lard, cheddar, salsa",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Flour tortilla: vegetarian\n2. Refried beans made with lard: non-vegetarian (lard is animal fat)\n3. Cheddar: vegetarian\n4. Salsa: vegetarian\n\nno"
+    },
+    {
+      "recipe": "Gummy bears: sugar, glucose syrup, fruit juice, gelatin",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Sugar: vegetarian\n* Glucose syrup: vegetarian\n* Fruit juice: vegetarian\n* Gelatin: non-vegetarian (made from animal products)\n\nno"
+    },
+    {
+      "recipe": "Panna cotta: cream, sugar, vanilla, gelatin",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Cream: vegetarian\n* Sugar: vegetarian\n* Vanilla: vegetarian\n* Gelatin: non-vegetarian (made from animal bones and connective tissue)\n\nno"
+    },
+    {
+      "recipe": "Kimchi: napa cabbage, chili flakes, garlic, ginger, fish sauce",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Napa cabbage: vegetarian\n* Chili flakes: vegetarian\n* Garlic: vegetarian\n* Ginger: vegetarian\n* Fish sauce: non-vegetarian (made from fish)\n\nno"
+    },
+    {
+      "recipe": "Thai green curry: tofu, green curry paste with shrimp paste, coconut milk, aubergine, basil",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Tofu: vegetarian\n2. Green curry paste with shrimp paste: non-vegetarian (shrimp paste is made from shrimp)\n3. Coconut milk: vegetarian\n4. Aubergine: vegetarian\n5. Basil: vegetarian\n\nno"
+    },
+    {
+      "recipe": "Minestrone: carrots, celery, beans, pasta, tomatoes, chicken stock",
+      "answer": "yes",
+      "expected": "no",
+      "result": "WRONG",
+      "raw": "Here's the check:\n\n1. Carrots - vegetarian\n2. Celery - vegetarian\n3. Beans - vegetarian\n4. Pasta - vegetarian\n5. Tomatoes - vegetarian\n6. Chicken stock - non-vegetarian (made from animal)\n\nyes"
+    },
+    {
+      "recipe": "Apple pie: apples, sugar, cinnamon, pastry made with lard",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Apples: vegetarian\n* Sugar: vegetarian\n* Cinnamon: vegetarian\n* Pastry made with lard: non-vegetarian (lard is an animal fat)\n\nno"
+    },
+    {
+      "recipe": "Tamales: masa harina, lard, cheese, green chili",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Masa harina: vegetarian\n* Lard: non-vegetarian (made from animal fat)\n* Cheese: vegetarian\n* Green chili: vegetarian\n\nno"
+    },
+    {
+      "recipe": "Miso soup: miso paste, tofu, wakame, dashi made from bonito flakes",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Miso paste: vegetarian\n* Tofu: vegetarian\n* Wakame: vegetarian\n* Dashi made from bonito flakes: non-vegetarian (bonito flakes are fish)\n\nno"
+    },
+    {
+      "recipe": "Vegetable spring rolls: cabbage, carrots, rice paper, oyster sauce dip",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Cabbage - vegetarian\n2. Carrots - vegetarian\n3. Rice paper - vegetarian\n4. Oyster sauce dip - non-vegetarian (made from oysters, which are seafood)\n\nno"
+    },
+    {
+      "recipe": "Mapo tofu: tofu, minced pork, chili bean paste, sichuan pepper",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Tofu: vegetarian\n2. Minced pork: non-vegetarian (meat)\n3. Chili bean paste: vegetarian (made from beans, no animal products)\n4. Sichuan pepper: vegetarian (pepper is a plant)\n\nno"
+    },
+    {
+      "recipe": "Spaghetti puttanesca: spaghetti, tomatoes, olives, capers, anchovies",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Spaghetti: vegetarian\n* Tomatoes: vegetarian\n* Olives: vegetarian\n* Capers: vegetarian\n* Anchovies: non-vegetarian (made from fish)\n\nno"
+    },
+    {
+      "recipe": "Quiche Lorraine: pastry, eggs, cream, bacon",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Pastry - unknown (assuming it's made from plant-based ingredients)\n2. Eggs - vegetarian\n3. Cream - vegetarian\n4. Bacon - non-vegetarian (made from pig meat)\n\nno"
+    },
+    {
+      "recipe": "Spaghetti carbonara: spaghetti, eggs, pecorino, guanciale, black pepper",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Spaghetti: vegetarian\n* Eggs: vegetarian\n* Pecorino: made from sheep's milk, vegetarian\n* Guanciale: made from pork jowl, non-vegetarian\n* Black pepper: vegetarian\n\nno"
+    },
+    {
+      "recipe": "Pasta e fagioli: pasta, cannellini beans, tomatoes, pancetta",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Pasta: vegetarian\n* Cannellini beans: vegetarian\n* Tomatoes: vegetarian\n* Pancetta: non-vegetarian (made from pork)\n\nno"
+    },
+    {
+      "recipe": "Scotch eggs: boiled eggs, sausage meat, breadcrumbs",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Boiled eggs: Vegetarian\n2. Sausage meat: Non-vegetarian (made from meat)\n3. Breadcrumbs: Vegetarian\n\nNo."
+    },
+    {
+      "recipe": "Breakfast plate: fried eggs, mushrooms, tomatoes, black pudding, toast",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Fried eggs - Vegetarian\n2. Mushrooms - Vegetarian\n3. Tomatoes - Vegetarian\n4. Black pudding - Non-vegetarian (made from animal blood and meat)\n5. Toast - Vegetarian\n\nno"
+    },
+    {
+      "recipe": "Tonkotsu ramen: noodles, tonkotsu broth, corn, spring onion, soft-boiled egg",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Noodles: Vegetarian\n2. Tonkotsu broth: Non-vegetarian (made from pork bones)\n3. Corn: Vegetarian\n4. Spring onion: Vegetarian\n5. Soft-boiled egg: Vegetarian\n\nno"
+    },
+    {
+      "recipe": "Pad see ew: wide rice noodles, tofu, egg, broccoli, oyster sauce",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Wide rice noodles: vegetarian\n2. Tofu: vegetarian\n3. Egg: vegetarian\n4. Broccoli: vegetarian\n5. Oyster sauce: non-vegetarian (made from oysters, which are seafood)\n\nno"
+    },
+    {
+      "recipe": "Lemon cheesecake: digestive biscuits, butter, cream cheese, lemon, gelatin",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Digestive biscuits: vegetarian\n2. Butter: vegetarian\n3. Cream cheese: vegetarian\n4. Lemon: vegetarian\n5. Gelatin: non-vegetarian (made from animal bones and connective tissue)\n\nno"
+    },
+    {
+      "recipe": "Chicken quesadilla: flour tortilla, chicken, cheddar, peppers",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Flour tortilla: vegetarian\n2. Chicken: non-vegetarian\n3. Cheddar: vegetarian\n4. Peppers: vegetarian\n\nno"
+    },
+    {
+      "recipe": "Prawn cocktail: prawns, lettuce, mayonnaise, ketchup",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Prawns: non-vegetarian (fish/seafood)\n2. Lettuce: vegetarian\n3. Mayonnaise: vegetarian (assuming it's made from plant-based ingredients, no animal-derived ingredients mentioned)\n4. Ketchup: vegetarian (assuming it's made from plant-based ingredients, no animal-derived ingredients mentioned)\n\nno"
+    },
+    {
+      "recipe": "Nduja pizza: dough, tomato sauce, mozzarella, nduja",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Dough: vegetarian\n* Tomato sauce: vegetarian\n* Mozzarella: vegetarian\n* Nduja: non-vegetarian (made from pork)\n\nno"
+    },
+    {
+      "recipe": "Pesto pasta: pasta, basil, pine nuts, parmesan, garlic, olive oil",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* pasta: vegetarian\n* basil: vegetarian\n* pine nuts: vegetarian\n* parmesan: made from cow's milk, vegetarian\n* garlic: vegetarian\n* olive oil: vegetarian\n\nyes"
+    },
+    {
+      "recipe": "Mango jelly: mango, sugar, agar agar",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Mango: vegetarian\n* Sugar: vegetarian\n* Agar agar: vegetarian (agar agar is a plant-based gelatin substitute)\n\nyes"
+    },
+    {
+      "recipe": "Seitan stir-fry: seitan, broccoli, peppers, soy sauce, ginger",
+      "answer": "no",
+      "expected": "yes",
+      "result": "WRONG",
+      "raw": "Here's the check:\n\n1. Seitan: made from wheat gluten, but often made from wheat flour that has been washed to remove the bran and germ, which can be a byproduct of animal bone char. Non-vegetarian.\n2. Broccoli: plant-based, vegetarian.\n3. Peppers: plant-based, vegetarian.\n4. Soy sauce: often made from fermented soybeans, but some brands may use animal bone char in the filtering process. Non-vegetarian.\n5. Ginger: plant-based, vegetarian.\n\nno"
+    },
+    {
+      "recipe": "Black bean burger: black beans, breadcrumbs, egg, cumin, burger bun",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Black beans: vegetarian\n* Breadcrumbs: vegetarian\n* Egg: vegetarian\n* Cumin: vegetarian\n* Burger bun: vegetarian\n\nyes"
+    },
+    {
+      "recipe": "Aubergine parmigiana: aubergine, tomato sauce, mozzarella, parmesan, basil",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Aubergine: vegetarian\n* Tomato sauce: unknown (assuming it's a vegetable-based sauce, but could be made with animal products like meat or fish stock)\n* Mozzarella: made from milk, vegetarian\n* Parmesan: made from milk, vegetarian\n* Basil: vegetarian\n\nNo non-vegetarian ingredients are explicitly listed, but the tomato sauce is a concern. However, since it's not explicitly stated to contain animal products, I'll assume it's vegetarian for the sake of this exercise.\n\nyes"
+    },
+    {
+      "recipe": "Spinach quiche: butter pastry, eggs, cream, spinach, gruyere",
+      "answer": "no",
+      "expected": "yes",
+      "result": "WRONG",
+      "raw": "Here's the check:\n\n* Butter pastry: unknown (made from butter, which is animal byproduct)\n* Eggs: vegetarian\n* Cream: vegetarian\n* Spinach: vegetarian\n* Gruyere: made from cow's milk, vegetarian\n\nno"
+    },
+    {
+      "recipe": "Cacio e pepe: spaghetti, pecorino, black pepper",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Spaghetti: vegetarian\n* Pecorino: made from sheep's milk, vegetarian\n* Black pepper: vegetarian\n\nyes"
+    },
+    {
+      "recipe": "Tortilla espanola: potatoes, eggs, onion, olive oil",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Potatoes: vegetarian\n* Eggs: vegetarian\n* Onion: vegetarian\n* Olive oil: vegetarian\n\nyes"
+    },
+    {
+      "recipe": "Falafel wrap: chickpeas, herbs, flatbread, tahini, salad",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Chickpeas: vegetarian\n* Herbs: vegetarian\n* Flatbread: vegetarian\n* Tahini: made from sesame seeds, vegetarian\n* Salad: vegetarian (assuming it's a generic term and doesn't contain any non-vegetarian ingredients)\n\nyes"
+    },
+    {
+      "recipe": "Shakshuka: eggs, tomatoes, peppers, onion, cumin, paprika",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Eggs: vegetarian\n* Tomatoes: vegetarian\n* Peppers: vegetarian\n* Onion: vegetarian\n* Cumin: vegetarian\n* Paprika: vegetarian\n\nyes"
+    },
+    {
+      "recipe": "Red lentil dal: red lentils, onion, garlic, turmeric, cumin, ghee",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Red lentils: vegetarian\n* Onion: vegetarian\n* Garlic: vegetarian\n* Turmeric: vegetarian\n* Cumin: vegetarian\n* Ghee: non-vegetarian (ghee is clarified butter, which comes from animal milk)\n\nyes"
+    },
+    {
+      "recipe": "Guacamole: avocado, lime, onion, coriander, chili",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Avocado - vegetarian\n2. Lime - vegetarian\n3. Onion - vegetarian\n4. Coriander - vegetarian\n5. Chili - vegetarian (assuming it's a type of pepper, not a meat product)\n\nyes"
+    },
+    {
+      "recipe": "Caprese salad: tomatoes, mozzarella, basil, olive oil",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Tomatoes: vegetarian\n* Mozzarella: made from cow's milk, therefore vegetarian\n* Basil: vegetarian\n* Olive oil: vegetarian\n\nyes"
+    },
+    {
+      "recipe": "Mac and cheese: macaroni, cheddar, milk, butter, flour",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Macaroni: vegetarian\n* Cheddar: vegetarian (made from cow's milk)\n* Milk: vegetarian\n* Butter: vegetarian (made from cow's milk)\n* Flour: vegetarian\n\nyes"
+    },
+    {
+      "recipe": "Egg fried rice: rice, eggs, peas, spring onion, soy sauce",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Rice: vegetarian\n* Eggs: vegetarian\n* Peas: vegetarian\n* Spring onion: vegetarian\n* Soy sauce: non-vegetarian (some soy sauces are made with animal products, such as fish or bone broth)\n\nyes"
+    },
+    {
+      "recipe": "Vegetable lasagne: lasagne sheets, courgette, spinach, ricotta, tomato sauce",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Lasagne sheets: unknown (could be made from animal products)\n2. Courgette: vegetarian\n3. Spinach: vegetarian\n4. Ricotta: made from milk (dairy), vegetarian\n5. Tomato sauce: unknown (could contain animal products)\n\nThe recipe is not clear about the lasagne sheets and tomato sauce, so I'll assume they might not be vegetarian.\n\nyes"
+    },
+    {
+      "recipe": "Chocolate brownies: dark chocolate, butter, sugar, eggs, flour",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Dark chocolate: vegetarian (made from cacao beans)\n* Butter: vegetarian (made from milk, but milk is allowed)\n* Sugar: vegetarian (made from sugar cane or sugar beets)\n* Eggs: vegetarian (allowed)\n* Flour: vegetarian (made from wheat)\n\nyes"
+    },
+    {
+      "recipe": "Greek yogurt bowl: greek yogurt, honey, walnuts",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Greek yogurt: vegetarian (dairy product)\n* Honey: vegetarian (plant-based)\n* Walnuts: vegetarian (plant-based)\n\nyes"
+    },
+    {
+      "recipe": "Paneer tikka: paneer, yogurt, peppers, onion, tikka spices",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n1. Paneer: made from milk, so vegetarian\n2. Yogurt: made from milk, so vegetarian\n3. Peppers: plant-based, so vegetarian\n4. Onion: plant-based, so vegetarian\n5. Tikka spices: no indication of animal origin, so vegetarian\n\nyes"
+    },
+    {
+      "recipe": "Mushroom stroganoff: mushrooms, onion, sour cream, paprika, vegetable stock",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Mushrooms: vegetarian\n* Onion: vegetarian\n* Sour cream: vegetarian\n* Paprika: vegetarian\n* Vegetable stock: vegetarian (note: some vegetable stocks may be made with animal products, but in this case, it's explicitly labeled as \"vegetable\" stock)\n\nyes"
+    },
+    {
+      "recipe": "Spanakopita: filo pastry, spinach, feta, eggs, butter",
+      "answer": "no",
+      "expected": "yes",
+      "result": "WRONG",
+      "raw": "Here's the check:\n\n1. Filo pastry: unknown (not specified)\n2. Spinach: vegetarian\n3. Feta: made from sheep's milk, which comes from an animal (non-vegetarian)\n4. Eggs: vegetarian\n5. Butter: made from milk, which comes from an animal (non-vegetarian)\n\nno"
+    },
+    {
+      "recipe": "Vegetable samosas: pastry, potatoes, peas, onion, spices",
+      "answer": "no",
+      "expected": "yes",
+      "result": "WRONG",
+      "raw": "Here's the check:\n\n1. Pastry: unknown (could be made from animal fat or lard)\n2. Potatoes: vegetarian\n3. Peas: vegetarian\n4. Onion: vegetarian\n5. Spices: vegetarian\n\nNo."
+    },
+    {
+      "recipe": "Toad in the hole: vegetarian sausages, eggs, flour, milk",
+      "answer": "no",
+      "expected": "yes",
+      "result": "WRONG",
+      "raw": "Here's the check:\n\n* Vegetarian sausages: unknown (could be made from animal products)\n* Eggs: vegetarian\n* Flour: vegetarian\n* Milk: vegetarian\n\nNo."
+    },
+    {
+      "recipe": "Miso soup: miso paste, tofu, wakame, kombu dashi",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "Here's the check:\n\n* Miso paste: vegetarian\n* Tofu: vegetarian\n* Wakame: vegetarian\n* Kombu dashi: kombu is a type of seaweed, but dashi is a Japanese broth made from dried fish and/or seaweed. Therefore, dashi is not vegetarian.\n\nyes"
+    },
+    {
+      "recipe": "Banana bread: bananas, flour, butter, sugar, eggs",
+      "answer": "no",
+      "expected": "yes",
+      "result": "WRONG",
+      "raw": "Here's the check:\n\n* Bananas: vegetarian\n* Flour: vegetarian\n* Butter: non-vegetarian (made from animal fat)\n* Sugar: vegetarian\n* Eggs: vegetarian\n\nno"
+    }
+  ]
+}

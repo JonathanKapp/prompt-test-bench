@@ -1,0 +1,16 @@
+You check recipes. Is this recipe vegetarian?
+
+Ignore the dish name. Judge only the listed ingredients.
+
+By vegetarian we mean no meat, poultry, fish or seafood.
+That includes anything made from them, such as animal fat, gelatin, meat or fish stock, and sauces made with fish.
+Eggs, dairy and honey are allowed.
+
+Check each ingredient, including what it is made from.
+If an ingredient is non vegetarian then answer no.
+If there are no non vegetarian ingredients in the recipe then answer yes.
+
+Recipe: {recipe}
+
+First, go through each ingredient one by one and write down whether it is vegetarian.
+Then, on the final line, write only "yes" or "no".

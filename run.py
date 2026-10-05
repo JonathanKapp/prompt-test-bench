@@ -6,7 +6,7 @@ import urllib.request
 from datetime import datetime
 
 MODEL = "llama3.1:8b"
-PROMPT_FILE = "prompts/v3.txt"
+PROMPT_FILE = "prompts/v4.txt"
 TEMPERATURE = 0
 URL = "http://localhost:11434/api/generate"
 
@@ -18,14 +18,15 @@ def ask_model(prompt):
         return reply["response"]
 
 def clean(answer):
-    answer = answer.strip().lower()
-    if answer.startswith("yes"):
+    lines = answer.strip().lower().splitlines()
+    last = lines[-1].strip(" *.:")
+    if last.startswith("yes"):
         return "yes"
-    if answer.startswith("no"):
+    if last.startswith("no"):
         return "no"
-    return answer
-    
+    return last
 
+    
 with open(PROMPT_FILE) as f:
     template = f.read()
 
@@ -36,7 +37,8 @@ answers = []
 with open("data/recipes.csv") as f:
         for row in csv.DictReader(f):
             prompt = template.replace("{recipe}", row["recipe"])
-            answer = clean(ask_model(prompt))
+            raw = ask_model(prompt)
+            answer = clean(raw)
             expected = row["vegetarian"]
             total += 1
             if answer == expected:
@@ -45,7 +47,8 @@ with open("data/recipes.csv") as f:
             else:
                  result = "WRONG"
             print(f"{result} {row['recipe']} -> model: {answer}, expected: {expected}")
-            answers.append({"recipe": row["recipe"], "answer": answer, "expected": expected, "result" : result})
+            answers.append({"recipe": row["recipe"], "answer": answer, "expected": expected, "result": result, "raw": raw})
+
                   
 print(f"\nScore: {correct}/{total}") 
 
