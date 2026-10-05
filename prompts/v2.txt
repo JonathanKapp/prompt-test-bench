@@ -1,0 +1,8 @@
+You check recipes. Is this recipe vegetarian?
+Answer only "yes" or "no".
+
+Recipe: {recipe}
+
+check each ingredient in the recipe
+if an ingredient is non vegetarian then answer no
+if there are no non vegetarian ingredients in the recipe then answer with yes
