@@ -1,4 +1,4 @@
-# We build this file together, one small piece at a time.
+# Prompt Test Bench: runs a prompt against recipes with known answers and scores the model.
 
 import csv
 import json
