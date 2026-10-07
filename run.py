@@ -6,7 +6,8 @@ import urllib.request
 from datetime import datetime
 
 MODEL = "llama3.1:8b"
-PROMPT_FILE = "prompts/v5.txt"
+PROMPT_FILE = "prompts/v3.txt"
+DATA_FILE = "data/heldout.csv"
 TEMPERATURE = 0
 URL = "http://localhost:11434/api/generate"
 
@@ -34,7 +35,7 @@ correct = 0
 total = 0 
 answers = []
 
-with open("data/recipes.csv") as f:
+with open(DATA_FILE) as f:
         for row in csv.DictReader(f):
             prompt = template.replace("{recipe}", row["recipe"])
             raw = ask_model(prompt)
@@ -57,6 +58,7 @@ run = {
     "time": now.isoformat(timespec="seconds"),
     "model": MODEL,
     "prompt_file": PROMPT_FILE,
+    "data_file": DATA_FILE,
     "temperature": TEMPERATURE,
     "score": correct,
     "total": total,

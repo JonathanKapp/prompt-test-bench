@@ -1,0 +1,221 @@
+{
+  "time": "2026-10-07T11:57:28",
+  "model": "llama3.1:8b",
+  "prompt_file": "prompts/v3.txt",
+  "data_file": "data/heldout.csv",
+  "temperature": 0,
+  "score": 28,
+  "total": 30,
+  "answers": [
+    {
+      "recipe": "Chicken tikka masala: chicken, yogurt, tomato, cream, garam masala",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "no"
+    },
+    {
+      "recipe": "Tiramisu: ladyfingers, mascarpone, eggs, coffee, cocoa",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Beef tacos: tortillas, ground beef, lettuce, cheddar, salsa",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "no"
+    },
+    {
+      "recipe": "Vegetable korma: cauliflower, peas, potatoes, cream, cashews, spices",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Fish and chips: cod, flour, beer, potatoes, oil",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "no"
+    },
+    {
+      "recipe": "Bean chilli: kidney beans, black beans, tomato, peppers, cumin",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Clam chowder: clams, potatoes, onion, cream, butter",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "no"
+    },
+    {
+      "recipe": "Eggs Florentine: English muffin, spinach, poached eggs, hollandaise",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Risotto alla milanese: arborio rice, saffron, parmesan, butter, chicken stock",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "no"
+    },
+    {
+      "recipe": "Halloumi skewers: halloumi, courgette, peppers, red onion, olive oil",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Vietnamese spring rolls: rice paper, vermicelli, lettuce, mint, nuoc cham dipping sauce",
+      "answer": "yes",
+      "expected": "no",
+      "result": "WRONG",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Lemon meringue pie: pastry, lemon curd, eggs, sugar, butter",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Refried beans: pinto beans, lard, onion, garlic, salt",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "no"
+    },
+    {
+      "recipe": "Ratatouille: aubergine, courgette, peppers, tomato, olive oil",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Trifle: sponge cake, custard, sherry, raspberry jelly, cream",
+      "answer": "yes",
+      "expected": "no",
+      "result": "WRONG",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Hummus: chickpeas, tahini, lemon, garlic, olive oil",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Pho: rice noodles, beef broth, basil, bean sprouts, lime",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "no"
+    },
+    {
+      "recipe": "Tofu scramble: tofu, turmeric, spinach, onion, nutritional yeast",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Tom yum soup: lemongrass, mushrooms, lime leaves, chilli, fish sauce",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "no"
+    },
+    {
+      "recipe": "Gnocchi with tomato sauce: potato gnocchi, tomato, garlic, basil, olive oil",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Chilli con carne: kidney beans, minced beef, tomato, chilli, cumin",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "no"
+    },
+    {
+      "recipe": "Vegetable pho: rice noodles, vegetable broth, tofu, basil, lime",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Paella: rice, saffron, peppers, peas, chorizo, mussels",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "no"
+    },
+    {
+      "recipe": "Veggie sausage roll: puff pastry, vegetarian sausage, onion, egg wash",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Gumbo: okra, peppers, celery, andouille sausage, rice",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "no"
+    },
+    {
+      "recipe": "Coconut rice pudding: rice, coconut milk, sugar, vanilla, mango",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Yorkshire pudding with gravy: flour, eggs, milk, beef dripping gravy",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "no"
+    },
+    {
+      "recipe": "Cheese and onion pasty: pastry, cheddar, potato, onion",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "yes"
+    },
+    {
+      "recipe": "Udon soup: udon noodles, dashi broth, spring onion, tofu",
+      "answer": "no",
+      "expected": "no",
+      "result": "RIGHT",
+      "raw": "no"
+    },
+    {
+      "recipe": "Mushroom gravy with mash: potatoes, butter, mushrooms, vegetable stock, onion",
+      "answer": "yes",
+      "expected": "yes",
+      "result": "RIGHT",
+      "raw": "yes"
+    }
+  ]
+}
