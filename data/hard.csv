@@ -1,0 +1,61 @@
+recipe,vegetarian,type
+"Pad krapow tofu: tofu, holy basil, chilli, garlic, nam pla",no,trap
+"Beef stew: beef, carrots, potatoes, onion, red wine",no,ordinary
+"Matzo ball soup: matzo meal, eggs, schmaltz, carrots, celery",no,trap
+"Lamb kofta: minced lamb, onion, cumin, flatbread, yogurt",no,ordinary
+"Bean and cheese quesadilla: tortillas, black beans, cheddar, salsa",yes,ordinary
+"Lentil soup: red lentils, carrot, onion, cumin, vegetable stock",yes,ordinary
+"Quorn curry: mycoprotein pieces, onion, tomato, cream, spices",yes,lookalike
+"Nasi goreng: rice, egg, kecap manis, spring onion, terasi",no,trap
+"Cheese on toast: bread, cheddar, Worcestershire sauce",no,trap
+"Pancit bihon: rice noodles, cabbage, carrots, soy sauce, patis",no,trap
+"Vegetarian haggis: oats, lentils, mushrooms, onion, vegetable suet",yes,lookalike
+"Roast potatoes: potatoes, goose fat, rosemary, salt",no,trap
+"Tomato aspic: tomato juice, celery, lemon, aspic",no,trap
+"Pulled jackfruit sandwich: jackfruit, smoked paprika, tomato, bun, coleslaw",yes,lookalike
+"Tomato soup: tomatoes, onion, garlic, cream, vegetable stock",yes,ordinary
+"Greek salad: tomato, cucumber, red onion, olives, feta",yes,ordinary
+"Fruit jelly: fruit juice, sugar, agar agar",yes,lookalike
+"Lentil bolognese: spaghetti, lentils, tomato, carrot, celery, red wine",yes,lookalike
+"Rocky road: chocolate, biscuits, vegan marshmallows, glace cherries",yes,lookalike
+"BLT sandwich: bacon, lettuce, tomato, bread, mayonnaise",no,ordinary
+"Yaki udon: udon noodles, cabbage, carrot, soy sauce, katsuobushi",no,trap
+"Cauliflower wings: cauliflower, flour, hot sauce, butter, blue cheese dip",yes,lookalike
+"Broccoli stir-fry: broccoli, garlic, vegetarian mushroom oyster sauce, rice",yes,lookalike
+"Chicken noodle soup: chicken, egg noodles, carrots, celery, broth",no,ordinary
+"Tuna pasta bake: pasta, tuna, sweetcorn, cheese sauce",no,ordinary
+"Carrot cake: carrots, flour, eggs, sugar, cream cheese frosting",yes,ordinary
+"Chana masala: chickpeas, tomato, onion, garam masala, ginger",yes,ordinary
+"Lobster roll: lobster, mayonnaise, celery, brioche roll",no,ordinary
+"Banh xeo: rice flour, turmeric, bean sprouts, mung beans, nuoc mam dipping sauce",no,trap
+"S'mores: graham crackers, milk chocolate, marshmallows",no,trap
+"Tempeh BLT: tempeh bacon, lettuce, tomato, bread, mayonnaise",yes,lookalike
+"Seitan steak with chimichurri: seitan, parsley, garlic, olive oil, vinegar",yes,lookalike
+"Courgette fritters: courgette, flour, eggs, feta, mint",yes,ordinary
+"Beetroot tuna tartare: beetroot, capers, shallot, lemon, olive oil",yes,lookalike
+"Lemon mousse: lemons, cream, eggs, sugar, leaf gelatine",no,trap
+"Sambal kangkung: water spinach, chilli, garlic, shrimp paste",no,trap
+"Duck pancakes: roast duck, pancakes, cucumber, spring onion, hoisin sauce",no,ordinary
+"Salmon teriyaki: salmon, soy sauce, mirin, ginger, rice",no,ordinary
+"Banana blossom fish and chips: banana blossom, flour, beer, potatoes, oil",yes,lookalike
+"Pork dumplings: minced pork, cabbage, ginger, dumpling wrappers",no,ordinary
+"Spaghetti with colatura: spaghetti, garlic, chilli, parsley, colatura",no,trap
+"French toast: bread, eggs, milk, cinnamon, maple syrup",yes,ordinary
+"Kombu dashi noodle soup: noodles, kombu dashi, shiitake mushrooms, tofu, spring onion",yes,lookalike
+"Tofu pad thai: rice noodles, tofu, egg, tamarind, vegetarian fish sauce",yes,lookalike
+"Okonomiyaki: cabbage, flour, eggs, okonomiyaki sauce, bonito flakes",no,trap
+"Stir-fried bok choy: bok choy, garlic, oyster sauce, sesame oil",no,trap
+"Cold soba noodles: soba noodles, spring onion, wasabi, mentsuyu dipping sauce",no,trap
+"Veggie sausage and mash: vegetarian sausages, potatoes, butter, onion gravy made with vegetable stock",yes,lookalike
+"Stuffed peppers: peppers, rice, black beans, tomato, cheddar",yes,ordinary
+"Vegan cheesecake: cashews, coconut cream, lemon, dates, almonds",yes,lookalike
+"Veggie burger: plant-based patty, bun, lettuce, tomato, mayonnaise",yes,lookalike
+"Egg fried rice with XO sauce: rice, peas, carrots, eggs, XO sauce",no,trap
+"Butter bean scampi: butter beans, garlic, butter, white wine, parsley",yes,lookalike
+"Vegetable paella: rice, saffron, peppers, artichokes, peas",yes,ordinary
+"Agedashi tofu: tofu, potato starch, dashi, soy sauce, grated daikon",no,trap
+"Christmas pudding: dried fruit, breadcrumbs, suet, brandy, spices",no,trap
+"Prawn stir-fry: prawns, peppers, ginger, soy sauce, noodles",no,ordinary
+"Salad with coconut bacon: lettuce, tomato, cucumber, coconut bacon, lemon dressing",yes,lookalike
+"Onion tart: pastry, onions, cream, eggs, lardons",no,trap
+"Pea and mint risotto: arborio rice, peas, mint, butter, vegetable stock",yes,lookalike

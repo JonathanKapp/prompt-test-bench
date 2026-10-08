@@ -7,7 +7,7 @@ from datetime import datetime
 
 MODEL = "llama3.1:8b"
 PROMPT_FILE = "prompts/v3.txt"
-DATA_FILE = "data/heldout.csv"
+DATA_FILE = "data/hard.csv"
 TEMPERATURE = 0
 URL = "http://localhost:11434/api/generate"
 
@@ -34,6 +34,8 @@ with open(PROMPT_FILE) as f:
 correct = 0
 total = 0 
 answers = []
+group_total = {}
+group_correct = {}
 
 with open(DATA_FILE) as f:
         for row in csv.DictReader(f):
@@ -48,10 +50,16 @@ with open(DATA_FILE) as f:
             else:
                  result = "WRONG"
             print(f"{result} {row['recipe']} -> model: {answer}, expected: {expected}")
+            group = row.get("type", "all")
+            group_total[group] = group_total.get(group, 0) + 1
+            if answer == expected:
+                group_correct[group] = group_correct.get(group, 0) + 1
             answers.append({"recipe": row["recipe"], "answer": answer, "expected": expected, "result": result, "raw": raw})
 
                   
 print(f"\nScore: {correct}/{total}") 
+for group in group_total:
+     print(f" {group}: {group_correct.get(group, 0)}/{group_total[group]}")
 
 now = datetime.now()
 run = {
