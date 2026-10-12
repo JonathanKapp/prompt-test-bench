@@ -8,6 +8,7 @@ from datetime import datetime
 MODEL = "llama3.1:8b"
 PROMPT_FILE = "prompts/v3.txt"
 DATA_FILE = "data/hard.csv"
+KNOWLEDGE_FILE = "data/knowledge.csv"
 TEMPERATURE = 0
 URL = "http://localhost:11434/api/generate"
 
@@ -27,7 +28,20 @@ def clean(answer):
         return "no"
     return last
 
-    
+def load_knowledge():
+     notes = []
+     with open(KNOWLEDGE_FILE) as f:
+         for row in csv.DictReader(f):
+             notes.append(row)
+     return notes
+
+def find_notes(recipe, notes):
+    found = []
+    for item in notes:
+        if item["term"] in recipe.lower():
+            found.append(item["term"] + ": " + item["note"])
+    return found
+
 with open(PROMPT_FILE) as f:
     template = f.read()
 
