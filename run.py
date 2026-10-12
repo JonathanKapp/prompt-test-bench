@@ -6,7 +6,7 @@ import urllib.request
 from datetime import datetime
 
 MODEL = "llama3.1:8b"
-PROMPT_FILE = "prompts/v3.txt"
+PROMPT_FILE = "prompts/rag1.txt"
 DATA_FILE = "data/hard.csv"
 KNOWLEDGE_FILE = "data/knowledge.csv"
 TEMPERATURE = 0
@@ -45,6 +45,8 @@ def find_notes(recipe, notes):
 with open(PROMPT_FILE) as f:
     template = f.read()
 
+knowledge = load_knowledge()
+
 correct = 0
 total = 0 
 answers = []
@@ -53,7 +55,12 @@ group_correct = {}
 
 with open(DATA_FILE) as f:
         for row in csv.DictReader(f):
-            prompt = template.replace("{recipe}", row["recipe"])
+            found = find_notes(row["recipe"], knowledge)
+            if found:
+                notes_text = "\n".join(found)
+            else:
+                notes_text = "None"
+            prompt = template.replace("{recipe}", row["recipe"]).replace("{notes}", notes_text)
             raw = ask_model(prompt)
             answer = clean(raw)
             expected = row["vegetarian"]
